@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <link rel="icon" href="imges/logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form </title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>
+        login Clear Reflection
+    </title>
+</head>
+<body>
+    <div class="login-box">
+        <h2>login </h2>
+        <form>
+           
+            <div class="user-box">
+                <input type="email" name="" id="name" value="email" placeholder="@Username"   required >
+               
+            </div>
+            <div class="user-box">
+                <input type="password" name=""   id="pass" placeholder="Passowrd"    required >
+
+            </div>
+           
+            <a href="index.html" id="a" onclick="log()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Login
+
+            </a>
+
+            <p>You Don't have account? <a href="sigin.html" class="text-white">Register</a> </p>
+           
+        </form>
+    </div>
+
+    <script>
+        var name= localStorage.getItem("myValue20");
+        document.getElementById('name').value=name;
+        var pass= localStorage.getItem("myValue21");
+        document.getElementById('pass').value=pass;
+    function log(){
+         var name=document.getElementById('name').value;
+         localStorage.setItem("myValue23", name);
+         alert("Hi! " + name + " welcome to The Clear Refelction")
+         window.location.href='index.html'
+   }
+   </script>
+</body>
+</html>

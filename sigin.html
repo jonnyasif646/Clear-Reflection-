@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <link rel="icon" href="imges/logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form </title>
+    <link rel="stylesheet" href="sign.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body>
+    <div class="login-box">
+        <h2>sign up </h2>
+        <form>
+           
+            <div class="user-box">
+                <input type="text" name="" required id="name">
+               
+                <label>  <span><ion-icon name="at-circle-outline"></ion-icon></span> <span>User Name </span></label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="" required id="pass">
+                <label> <span><ion-icon name="bag-outline"></ion-icon></span><span>Password</span></label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="" required>
+                <label> <span><ion-icon name="bag-outline"></ion-icon></span><span>Confrom Password</span></label>
+            </div>
+            <a href="login.html" onclick="reg()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Registor
+
+            </a>
+           
+        </form>
+    </div>
+
+<script>
+        function reg(){
+            var name=document.getElementById('name').value;
+            localStorage.setItem("myValue20", name);
+            var pass=document.getElementById('pass').value;
+            localStorage.setItem("myValue21", pass);
+            window.location.href='login.html'
+        }
+            </script>
+</body>
+
+
+</html>
